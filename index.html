@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vesti | Local-First AI Memory for Real Work</title>
+    <meta
+      name="description"
+      content="Vesti is a local-first AI memory system that captures conversations across major AI platforms and turns them into a searchable, traceable archive for recall, synthesis, and knowledge work."
+    />
+    <meta name="theme-color" content="#12151a" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:title" content="Vesti | Local-First AI Memory for Real Work" />
+    <meta
+      property="og:description"
+      content="Capture conversations across major AI platforms, keep the archive local, and return to your thinking with retrieval, summaries, graphs, and notes."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/showcase.png" />
+    <meta
+      property="og:image:alt"
+      content="Vesti sidebar capture view and knowledge dashboard screenshots on a local-first landing page."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vesti | Local-First AI Memory for Real Work" />
+    <meta
+      name="twitter:description"
+      content="A local-first AI memory system for capture, recall, and traceable retrieval."
+    />
+    <meta name="twitter:image" content="./assets/showcase.png" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./assets/fonts/lexend-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/lexend-latin-500.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/lexend-latin-600.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/lexend-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Vesti home">
+          <img src="./assets/icon.svg" alt="" class="brand-mark" />
+          <span class="brand-lockup">
+            <span class="brand-text">Vesti</span>
+            <span class="brand-subtext">Local-first AI memory</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#why">Why</a>
+          <a href="#workflow">Flow</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#trust">Trust</a>
+        </nav>
+
+        <div class="header-links">
+          <a class="header-link" href="https://github.com/abraxas914/VESTI/releases/latest" target="_blank" rel="noreferrer"
+            >Latest release</a
+          >
+          <a class="button button-ghost" href="https://github.com/abraxas914/VESTI" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="shell hero-layout">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Local-first AI memory</p>
+            <h1>
+              Give serious AI work
+              <span class="display-line">a memory layer that stays yours.</span>
+            </h1>
+            <p class="hero-lede">
+              Vesti captures conversations across major AI platforms, keeps the archive on your device, and turns
+              scattered sessions into something you can search, classify, trace, and return to when the work matters.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/abraxas914/VESTI" target="_blank" rel="noreferrer"
+                >View on GitHub</a
+              >
+              <a class="button button-secondary" href="#workflow">See the workflow</a>
+            </div>
+            <p class="hero-note">
+              Open-source from day one, with local storage, export controls, and retrieval grounded in your own history.
+            </p>
+            <dl class="hero-metrics">
+              <div>
+                <dt>06</dt>
+                <dd>AI platforms supported in the current capture layer</dd>
+              </div>
+              <div>
+                <dt>Local</dt>
+                <dd>Storage and recall stay anchored to the archive you control</dd>
+              </div>
+              <div>
+                <dt>Traceable</dt>
+                <dd>Retrieval, summaries, and classification stay inspectable instead of opaque</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-stage" data-reveal>
+            <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
+            <div class="hero-stage-copy">
+              <p class="hero-stage-label">Archive field</p>
+              <p class="hero-stage-caption">
+                Motion is used here as evidence and atmosphere: sources, notes, recall paths, and semantic links, not a
+                dashboard ticker pretending to be product depth.
+              </p>
+            </div>
+            <figure
+              class="shot-card shot-card-primary"
+              style="--offset-x: 0px; --offset-y: 0px; --rotate: -5deg"
+              data-parallax="10"
+            >
+              <img src="./assets/showcase.png" alt="Vesti sidebar capture view" />
+            </figure>
+            <figure
+              class="shot-card shot-card-secondary"
+              style="--offset-x: 12%; --offset-y: 11%; --rotate: 7deg"
+              data-parallax="14"
+            >
+              <img src="./assets/showcase-2.png" alt="Vesti conversation list and library view" />
+            </figure>
+            <figure
+              class="shot-card shot-card-tertiary"
+              style="--offset-x: 34%; --offset-y: 50%; --rotate: -2deg"
+              data-parallax="18"
+            >
+              <img src="./assets/network.png" alt="Vesti semantic network graph" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-editorial" id="why">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Why Vesti</p>
+            <h2>The useful part of AI work should not dissolve into tabs, feeds, and platform silos.</h2>
+            <p class="section-lede">
+              Vesti is built for people who already use AI as part of writing, research, planning, and product work,
+              but do not want their own thinking to stay trapped inside six separate histories.
+            </p>
+          </div>
+
+          <div class="editorial-grid">
+            <article class="editorial-card" data-reveal>
+              <p class="editorial-kicker">Keep the real work</p>
+              <p>
+                AI conversations are no longer disposable prompts. They are where strategy gets debated, ideas get
+                tested, and half-finished thinking sharpens into something usable.
+              </p>
+            </article>
+
+            <article class="editorial-card" data-reveal>
+              <p class="editorial-kicker">Choose the signal</p>
+              <p>
+                Local-first does not have to mean hoard everything. Vesti keeps control over what becomes memory, how
+                much automation is allowed in, and when a session deserves curation.
+              </p>
+            </article>
+
+            <article class="editorial-card" data-reveal>
+              <p class="editorial-kicker">Follow meaning forward</p>
+              <p>
+                A useful archive is not a pile of transcripts. It is a system that can reconnect themes, show where a
+                claim came from, and help you return to the line of thought that mattered.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Workflow</p>
+            <h2>Four linked surfaces, one continuous memory flow.</h2>
+            <p class="section-lede">
+              Vesti starts quietly on the page, expands into quick control, opens into cross-platform browsing, and then
+              hands you a deeper dashboard for retrieval, graph structure, and long-form notes.
+            </p>
+          </div>
+
+          <div class="workflow-grid">
+            <article class="workflow-card" data-reveal>
+              <img src="./assets/pipeline-1.png" alt="Folded capsule state" />
+              <div>
+                <p class="card-index">01</p>
+                <h3>Persistent signal</h3>
+                <p>The capsule stays present on supported AI pages and exposes capture state without hijacking the session.</p>
+              </div>
+            </article>
+
+            <article class="workflow-card" data-reveal>
+              <img src="./assets/pipeline-2.png" alt="Expanded capsule controls" />
+              <div>
+                <p class="card-index">02</p>
+                <h3>Immediate control</h3>
+                <p>Expand the capsule to archive manually, inspect state, or move directly into the broader system.</p>
+              </div>
+            </article>
+
+            <article class="workflow-card" data-reveal>
+              <img src="./assets/pipeline-3.png" alt="Sidebar timeline and summary view" />
+              <div>
+                <p class="card-index">03</p>
+                <h3>Daily reading surface</h3>
+                <p>The browser sidebar becomes the fast surface for search, summaries, status, and direct recall.</p>
+              </div>
+            </article>
+
+            <article class="workflow-card" data-reveal>
+              <img src="./assets/pipeline-4.png" alt="Independent Vesti dashboard" />
+              <div>
+                <p class="card-index">04</p>
+                <h3>Deep knowledge work</h3>
+                <p>The dashboard adds semantic exploration, graph structure, manual curation, and longer-lived notes.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-capabilities" id="capabilities">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Capabilities</p>
+            <h2>Each surface has a job: capture, retrieve, reconnect, and preserve.</h2>
+          </div>
+
+          <div class="capability-grid">
+            <article class="capability capability-wide" data-reveal>
+              <div class="capability-copy">
+                <p class="capability-tag">Capture engine</p>
+                <h3>Cross-platform capture with explicit state and local persistence.</h3>
+                <p>
+                  The extension listens across ChatGPT, Claude, Gemini, DeepSeek, Qwen, and Doubao. It stores
+                  conversations locally, avoids duplicates, and supports mirrored, filtered, or manual archive modes.
+                </p>
+              </div>
+              <img src="./assets/threads-1.png" alt="Vesti conversation timeline" />
+            </article>
+
+            <article class="capability" data-reveal>
+              <img src="./assets/web-view-1.png" alt="Vesti explore interface" />
+              <div class="capability-copy">
+                <p class="capability-tag">Explore / RAG</p>
+                <h3>Ask your archive real questions.</h3>
+                <p>
+                  Explore turns a personal conversation history into a retrieval surface, then keeps the supporting
+                  sources visible instead of pretending the answer appeared from nowhere.
+                </p>
+              </div>
+            </article>
+
+            <article class="capability" data-reveal>
+              <img src="./assets/network.png" alt="Vesti semantic topology graph" />
+              <div class="capability-copy">
+                <p class="capability-tag">Network</p>
+                <h3>See thought as structure, not just chronology.</h3>
+                <p>
+                  A force-directed graph and similarity edges reveal recurring themes, semantic neighbors, and where
+                  separate sessions belong to the same line of inquiry.
+                </p>
+              </div>
+            </article>
+
+            <article class="capability" data-reveal>
+              <img src="./assets/web-view-4.png" alt="Vesti notes workspace" />
+              <div class="capability-copy">
+                <p class="capability-tag">Notes</p>
+                <h3>Turn high-value sessions into durable assets.</h3>
+                <p>
+                  Notes close the loop between retrieval and synthesis, giving users a place to turn captured dialogue
+                  into something more deliberate than a chat transcript.
+                </p>
+              </div>
+            </article>
+
+            <article class="capability capability-contrast" data-reveal>
+              <img src="./assets/insights-1.png" alt="Vesti structured reasoning and insights" />
+              <div class="capability-copy">
+                <p class="capability-tag">Insights + Gardener</p>
+                <h3>Classification and summaries stay inspectable.</h3>
+                <p>
+                  Structured summaries, topic assignment, and agent steps are designed to stay visible enough for users
+                  to understand what the system is doing on their behalf.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-architecture" id="architecture">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Architecture</p>
+            <h2>Two product layers, one archive contract.</h2>
+            <p class="section-lede">
+              Vesti is intentionally split so the capture layer can stay close to AI platforms while the dashboard stays
+              focused on retrieval, organization, and long-form knowledge work.
+            </p>
+          </div>
+
+          <div class="architecture-grid">
+            <article class="architecture-card" data-reveal>
+              <p class="architecture-label">Layer 01</p>
+              <h3>Capture and inference engine</h3>
+              <p>
+                The Chrome extension handles platform parsing, capture state, summaries, classification jobs,
+                vectorization work, and IndexedDB persistence.
+              </p>
+              <ul>
+                <li>Parser, observer, and capture-gate model</li>
+                <li>Local persistence with typed IndexedDB abstractions</li>
+                <li>Platform-aware surfaces such as capsule, sidebar, and data controls</li>
+              </ul>
+            </article>
+
+            <div class="architecture-bridge" data-reveal>
+              <span>Chrome extension message protocol</span>
+              <span>StorageApi boundary</span>
+            </div>
+
+            <article class="architecture-card" data-reveal>
+              <p class="architecture-label">Layer 02</p>
+              <h3>Independent knowledge dashboard</h3>
+              <p>
+                The dashboard is a separate surface for Library, Explore, Network, and Notes so UI work can stay
+                storage-implementation agnostic while the archive model stays coherent.
+              </p>
+              <ul>
+                <li>Retrieval grounded in user-owned sources</li>
+                <li>Semantic graph and topology views</li>
+                <li>Manual curation, notes, and longer-horizon recall</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-trust" id="trust">
+        <div class="shell trust-layout">
+          <div class="trust-copy" data-reveal>
+            <p class="eyebrow">Trust and boundaries</p>
+            <h2>Local-first is a product constraint, not a slogan.</h2>
+            <p class="section-lede">
+              Vesti is useful because it helps you return to your own thinking, not because it captures your history for
+              someone else. That means exportability, explicit capture control, and honest boundaries all need to stay on
+              the page.
+            </p>
+
+            <div class="trust-grid">
+              <article class="trust-card">
+                <h3>Own the archive</h3>
+                <p>Conversations stay local and can be exported in formats that remain useful outside the product.</p>
+              </article>
+              <article class="trust-card">
+                <h3>Control the filter</h3>
+                <p>Capture can be mirrored, denoised, or fully manual depending on how strict you want memory to be.</p>
+              </article>
+              <article class="trust-card">
+                <h3>Keep provenance visible</h3>
+                <p>Retrieval, summaries, and classification work better when the supporting trail stays inspectable.</p>
+              </article>
+              <article class="trust-card">
+                <h3>Avoid lock-in by design</h3>
+                <p>The product is shaped around replaceable storage boundaries instead of a hosted memory silo.</p>
+              </article>
+            </div>
+
+            <div class="boundary-panel">
+              <p class="boundary-label">Current boundaries</p>
+              <ul>
+                <li>Cross-device sync is intentionally absent until an end-to-end encrypted design is ready.</li>
+                <li>Browser-side vectorization is practical today for hundreds of sessions, not unbounded archives.</li>
+                <li>Parser maintenance remains necessary because AI platform DOM structures keep changing.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="trust-visual" data-reveal>
+            <figure class="trust-shot">
+              <img src="./assets/summary-generation-1.png" alt="Vesti summary generation view" />
+            </figure>
+            <figure class="trust-shot trust-shot-secondary">
+              <img src="./assets/summary-generation-2.png" alt="Vesti structured summary details" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-final">
+        <div class="shell final-panel" data-reveal>
+          <p class="eyebrow">Launch path</p>
+          <h2>A memory system for AI work should stay accountable to the person using it.</h2>
+          <p>
+            Vesti is open source, architecture-led, and designed to make recall feel more rigorous than bookmarking a
+            chat tab. The repository, release history, and technical shape are all visible from the first visit.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/abraxas914/VESTI" target="_blank" rel="noreferrer"
+              >Open the repository</a
+            >
+            <a
+              class="button button-secondary"
+              href="https://github.com/abraxas914/VESTI/releases/latest"
+              target="_blank"
+              rel="noreferrer"
+              >Browse the latest release</a
+            >
+            <a class="button button-ghost" href="#architecture">Read the architecture</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>Vesti is a local-first AI memory system for capture, recall, and deliberate knowledge work.</p>
+        <div class="footer-links">
+          <a href="https://github.com/abraxas914/VESTI" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/abraxas914/VESTI/releases/latest" target="_blank" rel="noreferrer">Releases</a>
+          <a href="#trust">Trust</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
